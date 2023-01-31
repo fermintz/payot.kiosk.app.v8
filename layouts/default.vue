@@ -58,6 +58,7 @@
 
     .aggre{
       .el-button{
+        background:transparent;
         font-size:18px;
         color:#fff;
       }

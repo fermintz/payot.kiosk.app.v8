@@ -21,21 +21,21 @@
     </div>
 
     <div class="main-btns">
-      <dl class="btn">
+      <dl class="btn" @click="$router.push('phone')">
         <dt>충전하기</dt>
         <dd>키오스크에 금액을<br>충전합니다</dd>
         <dd class="icon">
           <span class="material-icons">navigate_next</span>
         </dd>
       </dl>
-      <dl class="btn">
+      <dl class="btn" @click="$router.push('credit')">
         <dt>이용하기</dt>
         <dd>충전없이 장비를<br>이용합니다</dd>
         <dd class="icon">
           <span class="material-icons">navigate_next</span>
         </dd>
       </dl>
-      <dl class="btn">
+      <dl class="btn" @click="$router.push('user')">
         <dt>조회하기</dt>
         <dd>나의 이용내역을<br />조회합니다</dd>
         <dd class="icon">
