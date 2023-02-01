@@ -207,7 +207,7 @@
     z-index:2;
     background: linear-gradient(160deg, rgba(255,255,255,0) 80%, rgba(0, 71, 255,1) 100%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    animation: bgblue 5s infinite ;
+    animation: bgblue 4s infinite ;
     
   }
 
@@ -220,8 +220,8 @@
     z-index:1;
     background: linear-gradient(190deg, rgba(255, 255, 255, 0) 80%, #FF003D 100%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    animation: bgred 5s infinite ;
-    animation-delay: 2.5s;
+    animation: bgred 4s infinite ;
+    animation-delay: 2s;
   }
 }
 
