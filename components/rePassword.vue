@@ -13,14 +13,14 @@
       <div class="cont">
         <div class="left">
           <h4>
-            발송된 임시비밀번호를 <br/>
-            입력해주세요
+            휴대폰 번호로 발송된<br/> 
+            임시비밀번호를 입력해주세요
           </h4>
           <div class="pass_box">
             <span v-for="item in password.length" :key="item"></span>
           </div>
           <p>
-            휴대폰번호로 발송된 임시비밀번호(4자리)를<br/> 입력해주세요
+            임시비밀번호는 숫자 4자리입니다
           </p>
         </div>
         <div class="right">
@@ -108,7 +108,7 @@ const password = ref('')
       position: relative;
       display:flex;
       align-items: center;
-      margin-top:15px;
+      margin-top:30px;
       gap:20px;
       justify-content: center;
       background:#f5f5f7;

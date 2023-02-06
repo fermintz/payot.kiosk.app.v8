@@ -19,8 +19,39 @@
     </div>
 
     <div class="cont">
-      <div class="banner">
-        베너입니다.
+      <h5><b>※</b> 키오스크를 사용하기전에 확인해주세요</h5>
+      <div class="banners row">
+        
+        <dl class="banner">
+          <dt>
+            <strong>01</strong>
+            <img src="~/assets/img/guide01.jpg" />
+          </dt>
+          <dd>
+            
+            <span>세탁장비에 세탁물을 넣고 도어를 잠궈주세요</span>
+          </dd>
+        </dl>
+        <dl class="banner">
+          <dt>
+            <strong>02</strong>
+            <img src="~/assets/img/guide02.jpg" />
+          </dt>
+          <dd>
+            
+            <span>세탁장비에서 코스를 미리 선택해주세요</span>
+          </dd>
+        </dl>
+        <dl class="banner">
+          <dt>
+            <strong>03</strong>
+            <img src="~/assets/img/guide03.jpg" />
+          </dt>
+          <dd>
+            
+            <span>키오스크로 돌아와 상품을 결제해주세요</span>
+          </dd>
+        </dl>
       </div>
 
       <div class="divider">
@@ -94,10 +125,65 @@ const visible = ref(false)
     background:#e2e2e2;
     margin:60px 0;
   }
-  .banner{
-    height:450px;
-    background:#f2f2f2;
-    border-radius:40px;
+  h5{
+    font-size:28px;
+    font-weight:500;
+    margin-bottom:20px;
+
+    b{color:#d22727;}
+  }
+  .banners{
+    gap:40px;
+    dl{
+      flex:1;
+      dt{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow:hidden;
+        border-radius:20px;
+        border:3px solid #e2e2e2;
+        &:after{
+          content:'';
+          display:block;
+          padding-bottom:100%;
+        }
+        strong{
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left:10px;
+          top:10px;
+          font-size:26px;
+          font-weight:600;
+          z-index:3;
+          color:#fff;
+          background:#292929;
+          width:50px;
+          height:50px;
+          border-radius:15px;
+        }
+
+        img{
+          width:100%;
+          position: absolute;
+        }
+      }
+      dd{
+        margin-top:20px;
+        
+        strong,span{
+          display:block;
+        }
+        
+        span{
+          font-size:24px;
+        }
+      }
+    } 
+   
   }
 
   .numberPad{

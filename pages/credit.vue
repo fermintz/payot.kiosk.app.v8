@@ -30,6 +30,8 @@
         </strong>
       </div>
 
+      <div class="divider"></div>
+
       <div class="creditSelector row">
         <div class="creditItem" @click="$router.push('cashChage')">
           <div class="image">
@@ -86,9 +88,13 @@ const visible = ref(false)
 
 .cont{
 
+  .divider{
+    margin:60px 0;
+    height:3px;
+    background:#e2e2e2;
+  }
   .creditSelector{
     gap:40px;
-    margin-top:60px;
   }
  .creditItem{
     flex:1;
@@ -97,12 +103,13 @@ const visible = ref(false)
     align-items: center;
     position: relative;
     background:#fff;
-    padding:40px;
     border-radius:30px;
     min-height:560px;
     border:3px solid #e2e2e2;
+    overflow:hidden;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
     .image{
+      padding:40px;
       img{
         width:100%;
       }
@@ -115,14 +122,18 @@ const visible = ref(false)
       width:100%;
       left:0px;
       text-align:center;
-      bottom:30px;
+      bottom:0px;
+      background:#0066ff;
+      padding:30px 0;
       strong{
         font-size:30px;
+        line-height:1;
         font-weight:500;
+        color:#fff;
       }
       span{
         margin-left:20px;
-        color:#0066ff;
+        color:#fff;
         font-size:36px;
       }
     }

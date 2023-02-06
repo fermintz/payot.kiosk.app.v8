@@ -131,7 +131,7 @@
   flex-direction: column;
   overflow-y:auto;
   background:#292929;
-  border:3px solid #000;
+
   padding:40px;
   border-radius:30px;
   height:1200px;

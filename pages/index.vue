@@ -12,7 +12,15 @@
 
     <div class="main-slide-wrap">
       <div class="main-slide">
-        <img src="~/assets/img/slide01.jpg"/>
+
+        <el-carousel :interval="5000" height="1150px">
+          <el-carousel-item>
+            <img src="~/assets/img/slide01.jpg"/>
+          </el-carousel-item>
+          <el-carousel-item>
+            <img src="~/assets/img/slide02.jpg"/>
+          </el-carousel-item>
+        </el-carousel>        
       </div>
       <div class="notice row">
         <strong>공지사항</strong>
@@ -23,21 +31,21 @@
     <div class="main-btns">
       <dl class="btn" @click="$router.push('phone')">
         <dt>충전하기</dt>
-        <dd>키오스크에 금액을<br>충전합니다</dd>
+        <dd>미리 금액을 충전하고 보너스를 받습니다</dd>
         <dd class="icon">
           <span class="material-icons">navigate_next</span>
         </dd>
       </dl>
       <dl class="btn" @click="$router.push('credit')">
         <dt>이용하기</dt>
-        <dd>충전없이 장비를<br>이용합니다</dd>
+        <dd>충전금액 사용하기 <b>충전없이도 사용가능</b></dd>
         <dd class="icon">
           <span class="material-icons">navigate_next</span>
         </dd>
       </dl>
       <dl class="btn" @click="$router.push('user')">
         <dt>조회하기</dt>
-        <dd>나의 이용내역을<br />조회합니다</dd>
+        <dd>나의 포인트 및 사용내역을 조회합니다</dd>
         <dd class="icon">
           <span class="material-icons">navigate_next</span>
         </dd>
@@ -88,6 +96,8 @@
     height:1150px;
     border-radius:30px;
     overflow:hidden;
+    border:3px solid rgba(255,255,255,1);
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.2);
   }
   .notice{
     position: absolute;
@@ -99,7 +109,7 @@
     background:#fff;
     border-radius:20px;
     border:3px solid #292929;
-    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.2);
+
     strong{
       font-size:28px;
       font-weight:600;
@@ -123,6 +133,7 @@
   height:450px;
   background:rgba(255,255,255,0.80);
   border-radius:30px;
+  border:3px solid #e2e2e2;
   box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   display:flex;
@@ -150,6 +161,10 @@
     dd{
       font-size:24px;
       color:#797979;
+
+      b{
+        color:#ff0066
+      }
     }
     dd.icon{
       position: absolute;

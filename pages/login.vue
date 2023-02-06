@@ -20,7 +20,7 @@
 
       <div class="btns">
         <el-button class="coces" @click="$router.push('/')">KOCES 로그인(64bit)</el-button>
-        <el-button class="kicc" @click="$router.push('/')">KICC 로그인</el-button>
+        <el-button class="kicc" @click="visible = true">KICC 로그인</el-button>
 
         <div class="divider">
           <span class="black"></span>
@@ -34,6 +34,8 @@
       </div>
       
     </div>
+
+    <loading v-model="visible"/>
   </div>
 </template>
 
@@ -42,6 +44,9 @@
 definePageMeta({
   layout:'empty'
 })
+
+const visible = ref(false)
+
 </script>
 
 <style lang="scss" scoped>
