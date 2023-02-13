@@ -109,7 +109,7 @@
       </el-button>
     </div>
 
-    <rePassword v-model="visible"/>
+    <password v-model="visible"/>
   </div>
 </template>
 

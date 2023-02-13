@@ -5,10 +5,10 @@
     align-center
     :show-close="false"
   >
-    
     <div class="dialog message">
       <div class="text">
-        <strong>현금투입을 완료하시겠습니까?</strong>
+        <strong>충전완료</strong>
+        <span>현금투입을 완료하시겠습니까?</span>
       </div>
       <div class="divider"></div>
       <div class="dialog-btns">
@@ -44,15 +44,20 @@ const show = computed({
   bottom:15%;
 }
 .message{
- 
-
   .text{
-    padding:50px 0;
-    text-align:center;
+    padding:50px 50px;
+    strong,span{
+      display:block;
+    }
     strong{
-      font-size:36px;
-      font-weight:500;
-      box-shadow: inset 0 -15px 0 #D5FFE8;
+      font-size:32px;
+      font-weight:400;
+      // box-shadow: inset 0 -15px 0 #D5FFE8;
+      color:#0066ff;
+    }
+    span{
+      font-size:40px;
+      margin-top:10px;
       color:#292929;
     }
   }
